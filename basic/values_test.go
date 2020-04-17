@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	. "github.com/karlseguin/expect"
+	e "github.com/karlseguin/expect"
+	"github.com/stretchr/testify/assert"
 )
 
 var stringsum string
@@ -29,9 +30,15 @@ func TestValue(t *testing.T) {
 		t.Errorf("wrong result for %v", "golang")
 	}
 
-	//if 7.0/3.0-2.333333333333333333333333 > 0.0000000000001 {
-	//}
+	e.Expect(true && false).ToEql(false)
 
-	Expect(7.0/3.0 - 2.333333333333333333333333).LessThan(0.0000000000001)
+	expect(7.0/3.0-2.333333333333333333333333 < 0.0000000000001, t)
+
+	e.Expect(7.0/3.0 - 2.333333333333333333333333).LessThan(0.0000000000001)
+
+	assert.False(t, true && false)
+	assert.True(t, true || false)
+
+	assert.False(t, !true)
 
 }

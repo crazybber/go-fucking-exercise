@@ -6,7 +6,7 @@ import (
 
 func expect(expression bool, t *testing.T) {
 	if !expression {
-		t.Errorf("wrong result for %v", expression)
+		t.Errorf("wrong expression result for %v", expression)
 	}
 
 }
