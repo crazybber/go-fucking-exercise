@@ -87,7 +87,7 @@ func TestSSlices(t *testing.T) {
 
 	t.Logf("slice l length: %v", len(l))
 
-	assertEq(c, l[1])
+	assertEq("d", l[1])
 
 	l = s[:5]
 	fmt.Println("sl2:", l)

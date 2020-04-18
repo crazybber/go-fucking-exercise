@@ -43,7 +43,8 @@ func TestAArray(t *testing.T) {
 
 	assertEq(3, b[2])
 
-	assertEq(2, twoD[1][2])
+	assertEq(2, twoD[1][1])
+
 	t.Logf("2d array length: %v", len(twoD))
 	expect(len(twoD) == 2)
 }
