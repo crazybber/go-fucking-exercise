@@ -10,7 +10,7 @@ func multipleReturnValues() (int, int) {
 	return 3, 7
 }
 
-func main() {
+func mMultipleReturnValues() {
 
 	a, b := multipleReturnValues()
 	fmt.Println(a)
@@ -25,6 +25,8 @@ func multipleReturnMoreValues() (int, string, func()) {
 }
 
 func TestMultiReturnValues(t *testing.T) {
+
+	mMultipleReturnValues()
 
 	a, b := multipleReturnValues()
 
