@@ -16,6 +16,10 @@ func init() {
 	t = new(testing.T)
 }
 
+func pShow(tp interface{}) {
+	fmt.Printf("Testing Target : %v \n", tp)
+}
+
 func show(t *testing.T, tp interface{}) {
 	t.Logf("Testing information : %v", tp)
 }
