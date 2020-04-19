@@ -33,7 +33,6 @@ func TestRateLimiting(t *testing.T) {
 	for i := 0; i < 3; i++ {
 		burstyLimiter <- struct{}{}
 	}
-
 	go func() {
 		for {
 			select {
@@ -53,8 +52,15 @@ func TestRateLimiting(t *testing.T) {
 
 	for req := range burstyRequestsQueue {
 		<-burstyLimiter
+		if len(burstyLimiter) > 0 {
+			fmt.Println("working current in bursting status!")
+		} else {
+			fmt.Println("working current in normal status!")
+		}
 		fmt.Println("request handled", req, time.Now())
 	}
+
+	rateLimiting()
 
 }
 
