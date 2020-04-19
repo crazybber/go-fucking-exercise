@@ -42,6 +42,7 @@ func TestSSelect(t *testing.T) {
 		c2 <- 2
 	}()
 
+	//will block(witout default) ,until a IO occurred
 	select {
 	case msg1 := <-c1:
 		fmt.Println("received", msg1)
@@ -50,7 +51,7 @@ func TestSSelect(t *testing.T) {
 		fmt.Println("received", msg2)
 		assertEq(msg2, 2)
 	}
-	//time.Sleep(time.Second)
+
 	select {
 	case msg1 := <-c1:
 		expect(msg1 == 1)
