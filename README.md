@@ -138,4 +138,4 @@ func traverse(array int[]) {
 自古牛角不可钻，唯有套路得码心，想到别的，再说，先开始撸码了
 
 [零零散散记录一些问题点](./misc/NOTES.md)
-[先温习一下Go语言基础](./basic/README.md)
+[先温习一下Go语言基础](./language/README.md)
