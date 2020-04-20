@@ -30,6 +30,9 @@
     "source.organizeImports": true
   },
   "cSpell.words": [
+    "Goroutines",
+    "Stateful",
+    "Structs",
     "bber",
     "ifelse",
     "karlseguin",
