@@ -60,5 +60,8 @@ func assertNotEq(expected interface{}, actual interface{}) {
 	if !assert.NotEqual(t, expected, actual) {
 		fmt.Printf("Failed!!!!!! ----------------------------------------------------------> expect:[%v] , actual: [%v] \n", expected, actual)
 		t.Logf("Failed!!!!!! ---------------------------------------------------------->  expect:[%v] , actual: [%v] \n", expected, actual)
+	} else {
+		t.Logf("OK!!! expect [%v] not eq expression: [%v]", expected, actual)
+		fmt.Printf("OK!!! expect [%v] not eq expression: [%v] \n", expected, actual)
 	}
 }
