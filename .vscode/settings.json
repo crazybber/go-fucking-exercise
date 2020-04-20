@@ -35,7 +35,10 @@
     "Structs",
     "bber",
     "ifelse",
+    "iostream",
     "karlseguin",
+    "mongodb",
+    "postgres",
     "stretchr"
   ],
 }
