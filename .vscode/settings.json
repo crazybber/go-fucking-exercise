@@ -25,10 +25,7 @@
   "cSpell.allowCompoundWords": true,
 
   "go.formatTool": "goimports",
-  "go.useLanguageServer": true,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  },
+  "editor.codeActionsOnSave": {"source.organizeImports": true},
   "cSpell.words": [
     "Goroutines",
     "Stateful",
