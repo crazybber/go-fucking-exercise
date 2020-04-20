@@ -6,6 +6,7 @@ import (
 
 	"testing"
 
+	"github.com/logrusorgru/aurora"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -29,7 +30,9 @@ func expect(expression bool) {
 	if !expression {
 		_, file, line, _ := runtime.Caller(1)
 		t.Logf("Failed!!!!!! ----------------------------------------------------------> expression for [%v]", expression)
-		fmt.Printf("Failed!!!!!! in file: %s, line: %d ------> expression for [%v]", file, line, expression)
+
+		targetString := fmt.Sprintf("Failed!!!!!! in file: %s, line: %d ------> expression for [%v]", file, line, expression)
+		fmt.Println(aurora.Red(targetString))
 	} else {
 		t.Logf("OK!!! eq in expression: [%v]", expression)
 	}
@@ -48,9 +51,11 @@ func assertEq(expected interface{}, actual interface{}) {
 
 	if !assert.Equal(t, expected, actual) {
 		_, file, line, _ := runtime.Caller(1)
-		fmt.Printf("Failed!!!!!! in file: %s, line: %d -----> expect:[%v] , actual: [%v] \n", file, line, expected, actual)
+		targetString := fmt.Sprintf("Failed!!!!!! in file: %s, line: %d -----> expect:[%v] , actual: [%v] \n", file, line, expected, actual)
+		fmt.Println(aurora.Red(targetString))
 		t.Logf("Failed!!!!!! ---------------------------------------------------------->  expect:[%v] , actual: [%v] \n", expected, actual)
 	} else {
+
 		t.Logf("OK!!! expect [%v] eq expression: [%v]", expected, actual)
 		fmt.Printf("OK!!! expect [%v] eq expression: [%v] \n", expected, actual)
 	}
@@ -58,8 +63,9 @@ func assertEq(expected interface{}, actual interface{}) {
 
 func assertNotEq(expected interface{}, actual interface{}) {
 	if !assert.NotEqual(t, expected, actual) {
-		fmt.Printf("Failed!!!!!! ----------------------------------------------------------> expect:[%v] , actual: [%v] \n", expected, actual)
-		t.Logf("Failed!!!!!! ---------------------------------------------------------->  expect:[%v] , actual: [%v] \n", expected, actual)
+		_, file, line, _ := runtime.Caller(1)
+		fmt.Printf("Failed!!!!!! in file: %s, line: %d-----> expect:[%v] , actual: [%v] \n", file, line, expected, actual)
+		t.Logf("Failed!!!!!! in file: %s, line: %d------>  expect:[%v] , actual: [%v] \n", file, line, expected, actual)
 	} else {
 		t.Logf("OK!!! expect [%v] not eq expression: [%v]", expected, actual)
 		fmt.Printf("OK!!! expect [%v] not eq expression: [%v] \n", expected, actual)
