@@ -1,8 +1,9 @@
 {
+  "editor.tabSize": 2,
+  "extensions.ignoreRecommendations": true,
   "workbench.colorCustomizations": {
     "activityBar.background": "#759570",
     "activityBar.activeBorder": "#cfd3ef",
-    //"activityBar.activeBorder": "#3a0806",
     "activityBar.foreground": "#e7e7e7",
     "activityBar.hoverBackground": "#352cea",
     "activityBar.inactiveForeground": "#e7e7e799",
@@ -12,19 +13,19 @@
     "titleBar.inactiveBackground": "#5e795999",
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveForeground": "#e7e7e799",
-   // "statusBar.background": "#5e7959",
     "statusBarItem.hoverBackground": "#352cea",
-   // "statusBarItem.hoverBackground": "#759570",
     "statusBar.foreground": "#e7e7e7",
     "panel.border": "#759570",
     "sideBar.border": "#759570",
     "editorGroup.border": "#759570"
   },
+  "go.languageServerFlags": [],
+  "go.lintOnSave": "file",
+  "go.vetOnSave": "package",
+  "go.useCodeSnippetsOnFunctionSuggest": true,
   "go.testFlags": ["-v"],
-
-  "cSpell.allowCompoundWords": true,
-
   "go.formatTool": "goimports",
+  "cSpell.allowCompoundWords": true,
   "editor.codeActionsOnSave": {"source.organizeImports": true},
   "cSpell.words": [
     "Goroutines",
