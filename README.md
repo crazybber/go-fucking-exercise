@@ -59,11 +59,6 @@ go test ./...
 + skill 常用套路
   + [Timers](./skill)
   + [Tickers](./skill)
-  + [Worker Pools](./skill)
-  + [WaitGroups](./skill)
-  + [Rate Limiting](./skill)
-  + [Atomic Counters](./)
-  + [Mutexes](./skill)
   + [Stateful Goroutines](./skill)
   + [Sorting](./skill)
   + [Sorting by Functions](./skill)
@@ -80,6 +75,12 @@ go test ./...
   + [Time Formatting / Parsing](./skill)
   + [Random Numbers](./skill)
   + [Number Parsing](./skill)
++ sync 同步相关
+  + [Worker Pools](./snycs)
+  + [WaitGroups](./snycs)
+  + [Rate Limiting](./snycs)
+  + [Atomic Counters](./snycs)
+  + [Mutexes](./skill)
 + iostream 流相关，如文件流
   + [URL Parsing](./iostream)
   + [SHA1 Hashes](./iostream)
@@ -91,16 +92,18 @@ go test ./...
   + [Directories](./iostream)
   + [Temporary Files and Directories](./iostream)
   + [Testing](./basic)
-+ process 进程相关
++ Command Lines
   + [Command-Line Arguments](./process)
   + [Command-Line Flags](./process)
   + [Command-Line Subcommands](./process)
++ process 进程相关
   + [Environment Variables](./process)
-+ Network 网络相关
-  + [HTTP Clients](./network)
-  + [HTTP Servers](./network)
   + [Context](./process)
   + [Spawning Processes](./process)
   + [Executing Processes](./process)
   + [Signals](./process)
   + [Exit](./process)
+
++ Network 网络相关
+  + [HTTP Clients](./network)
+  + [HTTP Servers](./network)

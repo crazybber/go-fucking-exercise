@@ -1,4 +1,4 @@
-package skill
+package syncs
 
 import (
 	"fmt"
