@@ -1,4 +1,4 @@
-module github.com/crazybber/go-fucking-algorithm
+module github.com/crazybber/go-exercise
 
 go 1.14
 
