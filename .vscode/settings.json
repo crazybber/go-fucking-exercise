@@ -24,6 +24,7 @@
   "go.vetOnSave": "package",
   "go.useCodeSnippetsOnFunctionSuggest": true,
   "go.testFlags": ["-v"],
+  "go.testTimeout": "10s",
   "go.formatTool": "goimports",
   "cSpell.allowCompoundWords": true,
   "editor.codeActionsOnSave": {"source.organizeImports": true},
