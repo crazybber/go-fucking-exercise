@@ -2,16 +2,17 @@
 
 这里是Go语言基础,用来温习一下Go的常用套路.
 
-都以Test方式来写
+都以Test方式来写,方便直接测试.
 
+下载：
 ```go
-
 go get github.com/crazybber/go-exercise
+```
 
+测试：
+```go
 cd go-exercise
-
 go test ./...
-
 ```
 
 ## 姿势
