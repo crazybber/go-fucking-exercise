@@ -4,9 +4,19 @@
 
 都以Test方式来写
 
+```go
+
+go get github.com/crazybber/go-exercise
+
+cd go-exercise
+
+go test ./...
+
+```
+
 ## 姿势
 
-只需要一个个的看过去或者跑一遍，或者敲一遍(可以直接COPY),但是要确保理解了，就可以丢一边了。
+逐个跑一遍或者敲一遍(可以直接COPY),但是要确保理解了，就可以丢一边了。
 
 下述分类，还不是很合理，还正在调整
 
@@ -87,10 +97,10 @@
   + [Command-Line Subcommands](./process)
   + [Environment Variables](./process)
 + Network 网络相关
-  + [HTTP Clients](./)
-  + [HTTP Servers](./)
-  + [Context](./)
-  + [Spawning Processes](./)
-  + [Executing Processes](./)
-  + [Signals](./)
-  + [Exit](./)
+  + [HTTP Clients](./network)
+  + [HTTP Servers](./network)
+  + [Context](./process)
+  + [Spawning Processes](./process)
+  + [Executing Processes](./process)
+  + [Signals](./process)
+  + [Exit](./process)
