@@ -4,10 +4,68 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"os/exec"
 	"strings"
 	"testing"
 )
 
+func TestConsoleFiltersByEcho1(t *testing.T) {
+
+	pShow("------------------------")
+	filterCmd := exec.Command("bash", "-c", "xargs echo")
+	filterIn, _ := filterCmd.StdinPipe()
+	filterOut, _ := filterCmd.StdoutPipe()
+	filterCmd.Start()
+	filterIn.Write([]byte("hello"))
+	filterIn.Close()
+	scanner := bufio.NewScanner(filterOut)
+	for scanner.Scan() {
+		ucl := strings.ToUpper(scanner.Text())
+		if ucl == "E" {
+			pShow("Receive E(xit) ,Will exit")
+			break
+		}
+		assertEq("HELLO", ucl)
+		pShow("Receive Hello")
+	}
+
+	if err := scanner.Err(); err != nil {
+		pShow("error:")
+		os.Exit(1)
+	}
+	filterCmd.Wait()
+}
+
+func TestConsoleFilters(t *testing.T) {
+
+	pShow("------------------------")
+	filterCmd := exec.Command("bash", "-c", `grep -E "hello|E"`)
+	filterIn, _ := filterCmd.StdinPipe()
+	filterOut, _ := filterCmd.StdoutPipe()
+	filterCmd.Start()
+
+	//mock input data
+	filterIn.Write([]byte("hello\nhello\nhello\nE\n"))
+	filterIn.Close()
+
+	scanner := bufio.NewScanner(filterOut)
+	for scanner.Scan() {
+		ucl := strings.ToUpper(scanner.Text())
+
+		if ucl == "E" {
+			pShow("Receive E(xit) ,Will exit")
+			break
+		}
+		assertEq("HELLO", ucl)
+		pShow("Receive Hello")
+	}
+
+	if err := scanner.Err(); err != nil {
+		pShow("error:")
+		os.Exit(1)
+	}
+	filterCmd.Wait()
+}
 func TestLinesFilters(t *testing.T) {
 
 	//simulate read content from console

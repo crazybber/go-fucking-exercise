@@ -39,7 +39,8 @@
     "logrusorgru",
     "mongodb",
     "postgres",
-    "stretchr"
+    "stretchr",
+    "xargs"
   ],
 }
 
