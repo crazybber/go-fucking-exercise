@@ -109,3 +109,9 @@ go test ./...
 + Network 网络相关
   + [HTTP Clients](./network)
   + [HTTP Servers](./network)
+
+## 更多
+
+想通过例子，学习一下go的常用的模式？看这里
+
+[Go模式(go-patterns)](https://github.com/crazybber/go-pattern)
