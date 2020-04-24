@@ -111,8 +111,8 @@ go test ./...
   + [HTTP Servers](./network)
 
 + attentions(一些坑)
-  + [for range](./loop)
-  + [for select break](./loop)
+  + [for range](./loops)
+  + [for select break](./loops)
 
 ## 更多
 
