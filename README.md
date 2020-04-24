@@ -113,7 +113,7 @@ go test ./...
 + attentions(一些坑)
   + [for range](./loops)
   + [for select break](./loops)
-  + [deep coy](./more)
+  + [deep copy](./more)
   + [slice append](./more)
 
 ## 更多
