@@ -110,6 +110,10 @@ go test ./...
   + [HTTP Clients](./network)
   + [HTTP Servers](./network)
 
++ attentions(一些坑)
+  + [for range](./loop)
+  + [for select break](./loop)
+
 ## 更多
 
 想通过例子，学习一下go的常用的模式？看这里
