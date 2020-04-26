@@ -37,6 +37,15 @@ func TestVariables(t *testing.T) {
 	expect(b == 1)
 	expect(c == 2)
 
+	b++
+	expect(b == 2)
+
+	c--
+
+	assert.Equal(t, 1, c)
+
+	fmt.Println("c--", c)
+
 	var e int
 
 	assert.Equal(t, 0, e)
