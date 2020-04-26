@@ -119,3 +119,15 @@ func TestSSlices(t *testing.T) {
 	assert.Panics(t, func() { assertEq(nil, twoD[1][2]) }, "index out of range")
 
 }
+
+func TestArraysSetsValue(t *testing.T) {
+
+	bytesStack := []byte{}
+
+	assertNotEq(nil, bytesStack)
+
+	var bytesStack1 []byte
+
+	assertEq(0, len(bytesStack1))
+
+}
