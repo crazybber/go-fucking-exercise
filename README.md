@@ -118,6 +118,6 @@ go test ./...
 
 ## 更多
 
-想通过例子，学习一下go的常用的模式？看这里
+想通过例子，学习一下go的常用的模式？看这里：
 
 [Go模式(go-patterns)](https://github.com/crazybber/go-pattern)
