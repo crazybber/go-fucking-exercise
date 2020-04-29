@@ -43,10 +43,10 @@ go test ./...
   + [Recursion](./basic)
   + [Pointers](./basic)
 + pattern go 的基本组合继承模式
-  + [Structs](./pattern)
-  + [Methods](./pattern)
-  + [Interfaces](./pattern)
-  + [Errors](.//pattern)
+  + [Structs](./patterns)
+  + [Methods](./patterns)
+  + [Interfaces](./patterns)
+  + [Errors](.//patterns)
 + go routine 和Channels
   + [Goroutines](./routine)
   + [Channels](./routine)
