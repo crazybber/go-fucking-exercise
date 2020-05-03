@@ -1,4 +1,4 @@
-package syncs
+package routine
 
 import (
 	"log"
@@ -8,7 +8,7 @@ import (
 )
 
 // 要弄清楚slice遍历时被修改到底会发生什么.
-// 结果是安全失败.
+// 结果是安全的(在没发生异常的情况下)失败了.
 // 并不意味着是线程安全的.
 func TestGo(t *testing.T) {
 	s := make([]int, 0)
