@@ -106,17 +106,16 @@ go test ./...
   + [Executing Processes](./process)
   + [Signals](./process)
   + [Exit](./process)
-
 + Network 网络相关
   + [HTTP Clients](./network)
   + [HTTP Servers](./network)
-
 + attentions(一些坑)
   + [for range](./loops)
   + [for select break](./loops)
   + [deep copy](./more)
   + [slice append](./more)
-
++ misc 有用的杂项 
+  + [Go文章](./misc/README.md)
 ## 更多
 
 想通过例子，学习一下go的常用的模式？看这里：
