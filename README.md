@@ -1,8 +1,9 @@
 # 说明
 
-这里是Go语言基础,用来温习一下Go的常用套路.
+本仓库是Go语言基础,用来温习Go的常用套路或者作为入门学习.
 
 都以Test方式来写,方便直接测试.
+
 内容丰富,Test Case更加完善.
 
 下载：
@@ -120,4 +121,4 @@ go test ./...
 
 想通过例子，学习一下go的常用的模式？看这里：
 
-[Go模式(go-patterns)](https://github.com/crazybber/go-pattern)
+[Go模式(go-fucking-patterns)](https://github.com/crazybber/go-fucking-patterns)
