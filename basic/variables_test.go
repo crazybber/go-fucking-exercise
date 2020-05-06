@@ -2,6 +2,7 @@ package basic
 
 import (
 	"fmt"
+	"strconv"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -95,4 +96,11 @@ func TestVariablesFloats(t *testing.T) {
 
 	t.Logf("f-2=%f", f-2.0)
 
+}
+
+func TestParseInt(t *testing.T) {
+	var _, err = strconv.ParseInt("127", 0, 8)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
