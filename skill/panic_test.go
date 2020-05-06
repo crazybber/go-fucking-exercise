@@ -1,6 +1,7 @@
 package skill
 
 import (
+	"fmt"
 	"os"
 	"testing"
 	"time"
@@ -30,4 +31,11 @@ func TestPPanic(t *testing.T) {
 
 	assert.Panics(t, func() { pPanic() }, "manmade panic")
 
+}
+
+func TestNilPanic(t *testing.T) {
+
+	// test in nil
+	var test *string
+	fmt.Println(*test)
 }
