@@ -120,4 +120,4 @@ go test ./...
 
 想通过例子，学习一下go的常用的模式？看这里：
 
-[Go模式(go-fucking-patterns)](https://github.com/crazybber/go-fucking-patterns)
+[Go模式(go-awesome-patterns)](https://github.com/crazybber/go-awesome-patterns)
