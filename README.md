@@ -9,12 +9,12 @@
 
 下载：
 ```go
-go get github.com/crazybber/go-exercise
+go get github.com/crazybber/go-fucking-exercise
 ```
 
 测试：
 ```go
-cd go-exercise
+cd go-fucking-exercise
 go test ./...
 ```
 
