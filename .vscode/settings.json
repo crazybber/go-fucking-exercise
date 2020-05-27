@@ -42,5 +42,6 @@
     "stretchr",
     "xargs"
   ],
+  "peacock.color": "#5e7959",
 }
 
