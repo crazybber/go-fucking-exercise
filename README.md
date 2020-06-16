@@ -1,5 +1,6 @@
-# 说明
+# 说明 instruction
 
+if you want to find ***go-awesome-patterns* you can check : [Go Patterns(go-awesome-patterns)](https://github.com/crazybber/go-awesome-patterns)
 如果你是冲着 **go的各种实践模式(包含常用设计模式)**,看这里：[Go模式(go-awesome-patterns)](https://github.com/crazybber/go-awesome-patterns)
 
 
